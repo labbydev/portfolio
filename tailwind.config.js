@@ -9,6 +9,11 @@ module.exports = {
         serif: ["Playfair Display", ...defaultTheme.fontFamily.serif],
         sans: ["Spartan", ...defaultTheme.fontFamily.sans]
       },
+      colors: {
+        navy: '#404B69',
+        pink: '#DA0463',
+        blue: '#DBEDF3'
+      }
     },
   },
   variants: {},

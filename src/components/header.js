@@ -4,7 +4,7 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header
-    className={`bg-purple-800 mb-4`}
+    className={`bg-navy mb-4 font-serif`}
   >
     <div
       className={`container mx-auto py-4`}
