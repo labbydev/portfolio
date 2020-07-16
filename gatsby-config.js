@@ -53,6 +53,8 @@ module.exports = {
         ]
       }
     },
+    // Keep purgecss as last.
+    // @TODO: this can probably be removed since purge is part of tailwind core now.
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
