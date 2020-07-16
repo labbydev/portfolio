@@ -1,6 +1,7 @@
 ---
 title: My First Job
-date: 2012-07-10
+start_date: 2012-07-10
+end_date: 2014-10-10
 path: /my-first-job
 type: Job
 ---

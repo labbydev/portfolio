@@ -33,7 +33,7 @@ const Header = ({ siteTitle }) => (
         >
           <MenuLink to={`/about/`}>About</MenuLink>
           <MenuLink to={`/contact/`}>Contact</MenuLink>
-          <MenuLink to={`/resume/`}>Experience</MenuLink>
+          <MenuLink to={`/jobs/`}>Experience</MenuLink>
         </ul>
       </nav>
     </div>
