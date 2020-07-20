@@ -13,13 +13,22 @@ export default function Jobs({ data }) {
           text="Employment"
         />
         <p>Here's what I've been doing for awhile.</p>
-        <div className={`jobs__listing mt-4`}>
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <div className={`job__item mb-6`}>
-              <h2 className={`text-2xl uppercase font-thin tracking-tight`}><Link to={node.frontmatter.path}>{node.frontmatter.title}</Link></h2>
-              <p className={`text-sm text-navy`}>{node.frontmatter.start_date} - {node.frontmatter.end_date}</p>
-            </div>
-          ))}
+        <div className={`mt-4`}>
+          {data.allMarkdownRemark.edges.map(({ node }) => {
+            return (
+              <div className={`mb-6`}>
+                <h2 className={`text-2xl uppercase font-thin tracking-tight`}><Link
+                  to={node.frontmatter.path}>{node.frontmatter.company}</Link></h2>
+                <p className={`text-navy text-sm`}>{node.frontmatter.location}</p>
+                {node.frontmatter.roles.map(key =>
+                  <div className={`mb-2`}>
+                    <h3 className={`text-lg text-pink font-semibold`}>{key.title}</h3>
+                    <p className={`text-navy text-sm`}>{ key.end ? key.start + ` - ` + key.end : key.start  }</p>
+                  </div>
+                )}
+              </div>
+            )
+          })}
         </div>
       </div>
     </Layout>
@@ -28,19 +37,20 @@ export default function Jobs({ data }) {
 
 export const query = graphql`
     query {
-        allMarkdownRemark(filter: {frontmatter: {type: {eq: "Job"}}}, sort: {fields: frontmatter___end_date, order: DESC}) {
+        allMarkdownRemark(filter: {frontmatter: {type: {eq: "Job"}}}, sort: {fields: frontmatter___start, order: DESC}) {
             edges {
                 node {
-                    id
                     frontmatter {
-                        path
-                        title
-                        start_date(formatString: "MMMM YYYY")
-                        end_date(formatString: "MMMM YYYY")
+                        company
+                        location
+                        roles {
+                            end(formatString: "MMM YYYY")
+                            start(formatString: "MMM YYYY")
+                            title
+                        }
                     }
                 }
             }
         }
     }
-
 `
