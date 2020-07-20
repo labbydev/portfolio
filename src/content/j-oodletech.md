@@ -1,5 +1,4 @@
 ---
-title: Job 1
 company: OodleTech
 roles: 
   - 
@@ -7,7 +6,6 @@ roles:
     start: 2011-06-08
     end: 2011-08-15
 location: Cincinnati, OH
-path: /oodletech
 start: 2011
 type: Job
 ---

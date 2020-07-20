@@ -1,5 +1,4 @@
 ---
-title: Job 3
 company: Rock Creek Strategic Marketing
 roles: 
   - 
@@ -7,7 +6,6 @@ roles:
     start: 2012-07-15
     end: 2014-10-06
 location: Washington, D.C.
-path: /rock-creek
 start: 2012
 type: Job
 ---

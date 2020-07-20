@@ -1,5 +1,4 @@
 ---
-title: Job 4
 company: Palantir.net
 roles: 
   - 
@@ -19,7 +18,6 @@ roles:
     start: 2018-08-06
     end: 2018-10-20
 location: Chicago, IL
-path: /palantir
 start: 2014
 type: Job
 ---

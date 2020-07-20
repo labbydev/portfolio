@@ -1,5 +1,4 @@
 ---
-title: Job 2
 company: WOUB Center for Public Media
 roles: 
   - 
@@ -7,7 +6,6 @@ roles:
     start: 2010-10-08
     end: 2012-06-05
 location: Athens, OH
-path: /woub
 start: 2010
 type: Job
 ---
