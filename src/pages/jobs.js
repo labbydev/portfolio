@@ -17,8 +17,7 @@ export default function Jobs({ data }) {
           {data.allMarkdownRemark.edges.map(({ node }) => {
             return (
               <div className={`mb-6`}>
-                <h2 className={`text-2xl uppercase font-thin tracking-tight`}><Link
-                  to={node.frontmatter.path}>{node.frontmatter.company}</Link></h2>
+                <h2 className={`text-2xl uppercase font-thin tracking-tight`}>{node.frontmatter.company}</h2>
                 <p className={`text-navy text-sm`}>{node.frontmatter.location}</p>
                 {node.frontmatter.roles.map(key =>
                   <div className={`mb-2`}>
