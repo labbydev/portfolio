@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Jobs from "../components/jobs"
 import Degrees from "../components/degrees"
+import Conferences from "../components/conferences"
 
 export default function Experience() {
   return (
@@ -16,6 +17,7 @@ export default function Experience() {
         <p>Here's what I've been doing for awhile.</p>
         <Degrees/>
         <Jobs/>
+        <Conferences />
       </div>
     </Layout>
   )
