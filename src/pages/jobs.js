@@ -2,7 +2,7 @@ import React from "react"
 import PageTitle from "../components/page-title"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
 export default function Jobs({ data }) {
   return (
