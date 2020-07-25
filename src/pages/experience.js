@@ -14,7 +14,7 @@ export default function Experience() {
         <PageTitle
           text="Experience"
         />
-        <p>Here's what I've been doing for awhile.</p>
+        <p>Lauren has been designing and building websites since 2010, using technologies ranging from React, VueJS, Drupal, WordPress and flat HTML. As a Senior Developer in the Front End Practice she architects accessible SCSS, implements themes and designs JavaScript interactions. She uses her strong communication skills and unflappable nature to consult with clients and propose digital solutions to help them connect with their users in new and impactful ways.</p>
         <Degrees/>
         <Jobs/>
         <Conferences />
