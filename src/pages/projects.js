@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql, Link } from "gatsby"
 import Button from "../components/buttons"
+import Img from "gatsby-image"
 
 const Projects = ({ data }) => {
   return (
@@ -14,10 +15,11 @@ const Projects = ({ data }) => {
           text="Projects"
         />
         <p>What work have I actually done, though?</p>
-        <div className={`mt-4`}>
+        <div className={`mt-4 mb-4 flex`}>
           {data.allMarkdownRemark.edges.map(({ node }) => {
             return (
-              <div className={`mb-6`}>
+              <div className={`mb-6 w-1/4 p-4`}>
+                <Img fluid={node.frontmatter.image.childImageSharp.fluid} />
                 <h3 className={`text-2xl uppercase font-thin tracking-tight`}>
                   <Link to={node.frontmatter.path}>{node.frontmatter.client}</Link>
                 </h3>
@@ -54,6 +56,13 @@ export const query = graphql`
           frontmatter {
             client
             path
+            image {
+              childImageSharp {
+                fluid(maxWidth: 315) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             roles {
               end(formatString: "MMM YYYY")
               start(formatString: "MMM YYYY")

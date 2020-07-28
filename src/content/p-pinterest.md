@@ -1,5 +1,6 @@
 ---
 client: Pinterest
+image: ../images/help-pinterest.png
 roles: 
   - 
     title: Developer

@@ -34,6 +34,7 @@ const Header = ({ siteTitle }) => (
           <MenuLink to={`/about/`}>About</MenuLink>
           <MenuLink to={`/contact/`}>Contact</MenuLink>
           <MenuLink to={`/experience/`}>Experience</MenuLink>
+          <MenuLink to={`/projects/`}>Projects</MenuLink>
         </ul>
       </nav>
     </div>

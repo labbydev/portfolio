@@ -1,5 +1,6 @@
 ---
 client: Aviation Week Network
+image: ../images/awn.png
 roles: 
   - 
     title: Developer
