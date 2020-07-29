@@ -1,24 +1,20 @@
 import React from "react"
-import { Link } from "gatsby"
 import PageTitle from "../components/page-title"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import RecentProjects from "../components/recent-projects"
+import CurrentJob from "../components/current-job"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <PageTitle
-      text="Hi People"
+      text="Hey, I'm Lauren. I build websites."
     />
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/contact/">Contact</Link> <br/>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <p>Some people call me labby.</p>
+    <p>Fusing together a background in journalism and design with a vast knowledge of Drupal, accessibility and web development, I lead teams of engineers to build dynamic websites and create online relationships to help clients reach their users in new and impactful ways. </p>
+    <RecentProjects />
+    <CurrentJob />
   </Layout>
 )
 
