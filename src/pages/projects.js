@@ -18,16 +18,16 @@ const Projects = ({ data }) => {
         <div className={`mt-4 mb-4 flex`}>
           {data.allMarkdownRemark.edges.map(({ node }) => {
             return (
-              <div className={`mb-6 p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4`}>
+              <div>
                 <Img fluid={node.frontmatter.image.childImageSharp.fluid} />
-                <h3 className={`text-2xl uppercase font-thin tracking-tight`}>
+                <h3>
                   <Link to={node.frontmatter.path}>{node.frontmatter.client}</Link>
                 </h3>
-                <p className={`text-navy text-sm`}>{node.excerpt}</p>
+                <p>{node.excerpt}</p>
                 {node.frontmatter.roles.map(key =>
-                  <div className={`mb-2`}>
-                    <h3 className={`text-lg text-pink font-semibold`}>{key.title}</h3>
-                    <p className={`text-navy text-sm`}>{ key.end ? key.start + ` - ` + key.end : key.start  }</p>
+                  <div>
+                    <h3>{key.title}</h3>
+                    <small>{ key.end ? key.start + ` - ` + key.end : key.start  }</small>
                   </div>
                 )}
                 {node.frontmatter.sites.map(key =>
