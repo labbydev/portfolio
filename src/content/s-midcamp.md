@@ -1,5 +1,6 @@
 ---
-title: "American Medical Association: Topic Pages (A D8 Case Study)"
+title: American Medical Association
+subtitle: Topic Pages (A D8 Case Study)
 conference: MidCamp
 location: Chicago, IL
 date: 2018-03-15
