@@ -15,7 +15,7 @@ const Projects = ({ data }) => {
           text="Projects"
         />
         <p>What work have I actually done, though?</p>
-        <div className={`mt-4 mb-4 flex`}>
+        <div>
           {data.allMarkdownRemark.edges.map(({ node }) => {
             return (
               <div>
@@ -31,10 +31,7 @@ const Projects = ({ data }) => {
                   </div>
                 )}
                 {node.frontmatter.sites.map(key =>
-                  <Button
-                    size="sm"
-                    buttonColor="dark"
-                  >
+                  <Button>
                     <Link to={key.link}>{key.title}</Link>
                   </Button>
                 )}

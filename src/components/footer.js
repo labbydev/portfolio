@@ -1,9 +1,7 @@
 import React from "react"
 
 const Footer = () => (
-  <footer
-    className={`bg-blue p-4 mt-4 text-navy`}
-  >
+  <footer>
     © Lauren Burroughs {new Date().getFullYear()}
   </footer>
 )
