@@ -30,7 +30,7 @@ const RecentProjects = () => {
 
   return (
     <div>
-      <h2>Projectst</h2>
+      <h2>Projects</h2>
       <div>
         {data.allMarkdownRemark.edges.map(({ node }) => {
           return (

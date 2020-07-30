@@ -1,3 +1,39 @@
 @tailwind base;
+
+body {
+    @apply font-thin;
+    @apply bg-white;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h1 {
+    @apply text-3xl;
+    @apply text-secondary-dark;
+    @apply my-3;
+    @apply font-serif;
+    @apply font-black;
+}
+
+h2 {
+    @apply text-2xl;
+}
+
+h3 {
+    @apply text-xl;
+}
+
+h4 {
+    @apply text-lg;
+}
+
+a {
+    @apply text-secondary underline;
+}
+
+p {
+    @apply my-4;
+}
+
 @tailwind components;
 @tailwind utilities;
