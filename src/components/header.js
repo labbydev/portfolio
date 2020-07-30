@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => {
       className={`bg-primary`}
     >
       <div
-        className={`container max-width-screen-xl mx-auto`}
+        className={`container mx-auto flex xl:max-width-screen-xl lg:max-width-screen-lg md:max-width-screen-md sm:max-width-screen-sm`}
       >
         <Img
           fixed={logo.file.childImageSharp.fixed}

@@ -1,26 +1,17 @@
 @tailwind base;
 
 body {
-    @apply font-thin;
-    @apply bg-white;
+    @apply font-thin bg-white;
     font-size: 18px;
     line-height: 1.5;
 }
 
 h1 {
-    @apply text-6xl;
-    @apply text-secondary-dark;
-    @apply text-center;
-    @apply my-3;
-    @apply font-serif;
-    @apply font-black;
+    @apply text-6xl text-secondary-dark text-center my-3 font-serif font-black;
 }
 
 h2 {
-    @apply text-3xl;
-    @apply uppercase;
-    @apply tracking-tighter;
-    @apply text-tertiary;
+    @apply text-3xl  uppercase tracking-tighter text-tertiary;
 }
 
 h3 {
