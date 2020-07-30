@@ -1,5 +1,5 @@
 {
-  "name": "portfolio sitet",
+  "name": "portfolio",
   "private": true,
   "description": "A simple portfolio built on GatsbyJS with tailwindcss",
   "version": "0.1.0",

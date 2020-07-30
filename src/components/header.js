@@ -1,6 +1,7 @@
-import { Link } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Img from "gatsby-image"
 
 const MenuLink = props => (
   <li>
@@ -11,24 +12,49 @@ const MenuLink = props => (
   </li>
 )
 
-const Header = ({ siteTitle }) => (
-  <header>
-    <div>
-      <Link
-        to="/"
+const Header = ({ siteTitle }) => {
+  const logo = useStaticQuery(
+    graphql`
+      query {
+        file: file(relativePath: { eq: "logo.png" }) {
+          childImageSharp {
+            fixed(height:80) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
+    `
+  )
+
+  return (
+    <header
+      className={`bg-primary`}
+    >
+      <div
+        className={`container max-width-screen-xl mx-auto`}
       >
-        {siteTitle}
-      </Link>
-      <nav>
-        <ul>
-          <MenuLink to={`/about/`}>About</MenuLink>
-          <MenuLink to={`/experience/`}>Experience</MenuLink>
-          <MenuLink to={`/projects/`}>Projects</MenuLink>
-        </ul>
-      </nav>
-    </div>
-  </header>
-)
+        <Img
+          fixed={logo.file.childImageSharp.fixed}
+          alt={`logo L.A.B.`}
+          className={`m-4`}
+        />
+        <Link
+          to="/"
+        >
+          {siteTitle}
+        </Link>
+        <nav>
+          <ul>
+            <MenuLink to={`/about/`}>About</MenuLink>
+            <MenuLink to={`/experience/`}>Experience</MenuLink>
+            <MenuLink to={`/projects/`}>Projects</MenuLink>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

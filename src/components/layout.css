@@ -8,15 +8,19 @@ body {
 }
 
 h1 {
-    @apply text-3xl;
+    @apply text-6xl;
     @apply text-secondary-dark;
+    @apply text-center;
     @apply my-3;
     @apply font-serif;
     @apply font-black;
 }
 
 h2 {
-    @apply text-2xl;
+    @apply text-3xl;
+    @apply uppercase;
+    @apply tracking-tighter;
+    @apply text-tertiary;
 }
 
 h3 {
