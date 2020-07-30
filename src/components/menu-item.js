@@ -8,6 +8,7 @@ const MenuItem = props => (
     <Link
       to={props.to}
       className={`inline-block no-underline`}
+      activeClassName={`text-tertiary`}
     >
       {props.children}
     </Link>

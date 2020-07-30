@@ -32,8 +32,18 @@ module.exports = {
         black: '#08080C',
         white: '#FFFCF2',
       },
+      fontSize: {
+        'none': '0px',
+      },
       letterSpacing: {
         tightest: '-.075em',
+      },
+      height: {
+        '4px': '4px',
+        '50px': '50px',
+      },
+      width: {
+        '40px': '40px',
       },
     },
   },

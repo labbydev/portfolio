@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    @apply text-6xl text-secondary-dark text-center my-3 font-serif font-black my-10;
+    @apply text-3xl text-secondary-dark text-center my-3 font-serif font-black my-10;
 }
 
 h2 {
@@ -30,5 +30,46 @@ p {
     @apply my-4;
 }
 
+@screen xl {
+    h1 {
+        @apply text-6xl;
+    }
+}
+
 @tailwind components;
 @tailwind utilities;
+
+.hamburger {
+    font-size: 0px;
+    height: 4px;
+    margin-top: -2px;
+    top: 50%;
+    transition: background-color 0.3s;
+}
+
+.hamburger:before,
+.hamburger:after {
+    @apply bg-secondary h-full w-full absolute left-0;
+    content: '';
+    transition: transform 0.3s;
+}
+
+.hamburger:before {
+    transform: translateY(-250%);
+}
+
+.hamburger:after {
+    transform: translateY(250%);
+}
+
+.hamburger.is-open {
+    @apply bg-transparent;
+}
+
+.hamburger.is-open:before {
+    transform: translateY(0) rotate(45deg);
+}
+
+.hamburger.is-open:after {
+    transform: translateY(0) rotate(-45deg);
+}

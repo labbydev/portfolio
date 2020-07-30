@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Img from "gatsby-image"
 import MenuItem from "./menu-item"
+import MenuToggle from "./menu-toggle"
 
 const Header = ({ siteTitle }) => {
   const logo = useStaticQuery(
@@ -21,14 +22,14 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header
-      className={`bg-primary leading-none`}
+      className={`bg-primary leading-none px-4`}
     >
       <div
         className={`container mx-auto flex content-between py-4 flex content-between items-center justify-between`}
       >
         <Link
           to="/"
-          className={`font-serif font-black tracking-wide text-secondary-darker no-underline text-3xl inline-block flex items-center`}
+          className={`font-serif font-black tracking-wide text-secondary-darker no-underline text-xl lg:text-3xl inline-block flex items-center`}
         >
           <Img
             fixed={logo.file.childImageSharp.fixed}
@@ -37,16 +38,20 @@ const Header = ({ siteTitle }) => {
           />
           {siteTitle}
         </Link>
-        <nav className={``}>
-          <ul
-            className={`flex uppercase tracking-tighter text-sm font-semibold`}
-            aria-label={`Primary`}
+        <MenuToggle>
+          <nav
+            className={`absolute left-0 bg-primary w-full h-full`}
           >
-            <MenuItem to={`/about/`}>About</MenuItem>
-            <MenuItem to={`/experience/`}>Experience</MenuItem>
-            <MenuItem to={`/projects/`}>Projects</MenuItem>
-          </ul>
-        </nav>
+            <ul
+              className={`uppercase tracking-tighter text-sm font-semibold lg:flex`}
+              aria-label={`Primary`}
+            >
+              <MenuItem to={`/about/`}>About</MenuItem>
+              <MenuItem to={`/experience/`}>Experience</MenuItem>
+              <MenuItem to={`/projects/`}>Projects</MenuItem>
+            </ul>
+          </nav>
+        </MenuToggle>
       </div>
     </header>
   )
