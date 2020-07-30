@@ -7,19 +7,19 @@ body {
 }
 
 h1 {
-    @apply text-6xl text-secondary-dark text-center my-3 font-serif font-black;
+    @apply text-6xl text-secondary-dark text-center my-3 font-serif font-black my-10;
 }
 
 h2 {
-    @apply text-3xl  uppercase tracking-tighter text-tertiary;
+    @apply text-3xl  uppercase tracking-tighter text-tertiary my-8;
 }
 
 h3 {
-    @apply text-xl;
+    @apply text-xl my-4;
 }
 
 h4 {
-    @apply text-lg;
+    @apply text-lg my-3;
 }
 
 a {

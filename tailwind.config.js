@@ -20,7 +20,7 @@ module.exports = {
         },
         tertiary: {
           default: '#404063',
-          darker: '#202031'
+          dark: '#202031'
         },
         gray: {
           100: '#E2E2E2',
@@ -31,6 +31,9 @@ module.exports = {
         },
         black: '#08080C',
         white: '#FFFCF2',
+      },
+      letterSpacing: {
+        tightest: '-.075em',
       },
     },
   },
