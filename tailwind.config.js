@@ -1,8 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  //@TODO: remove manual postcss-purge and configure built in purge.
-  purge: false,
   theme: {
     extend: {
       fontFamily: {
@@ -10,12 +8,22 @@ module.exports = {
         sans: ["Spartan", ...defaultTheme.fontFamily.sans]
       },
       colors: {
-        navy: '#404B69',
-        pink: '#DA0463',
-        blue: '#DBEDF3'
+        primary: '#DA0463',
+        secondary: {
+          100: '#DBEDF3',
+          200: '#404B69'
+        }
+      },
+      fontSize: {
+        sm: ['14px', '20px'],
+        base: ['18px', '24px'],
+        lg: ['20px', '28px'],
+        xl: ['24px', '32px'],
       }
     },
   },
-  variants: {},
+  variants: {
+    fontSize: ['responsive', 'hover', 'focus'],
+  },
   plugins: [],
 }
