@@ -35,13 +35,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Lauren Burroughs`,
+        short_name: `labbydev`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        background_color: `#F59D16`,
+        theme_color: false,
+        display: `standalone`,
+        icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
     },
     {
