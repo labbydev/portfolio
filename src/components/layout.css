@@ -11,11 +11,18 @@ h1 {
 }
 
 h2 {
-    @apply text-3xl  uppercase tracking-tighter text-tertiary my-8;
+    @apply text-3xl  uppercase tracking-tighter text-tertiary mt-8 font-medium relative;
+}
+
+h2:before {
+    @apply absolute mr-2 left-0 top-0 text-4xl opacity-50;
+    content: '[';
+    left: -10px;
+    top: -8px;
 }
 
 h3 {
-    @apply text-xl my-4;
+    @apply text-xl font-serif font-bold italic;
 }
 
 h4 {
@@ -23,11 +30,11 @@ h4 {
 }
 
 a {
-    @apply text-secondary underline;
+    @apply text-secondary font-semibold;
 }
 
 p {
-    @apply my-4;
+    @apply my-2;
 }
 
 @screen lg {
