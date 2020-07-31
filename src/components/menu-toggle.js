@@ -15,7 +15,7 @@ class MenuToggle extends Component {
     return (
       <div className={`inline-block`}>
         <button
-          className={`no-underline h-50px w-40px relative block focus:outline-none`}
+          className={`no-underline h-50px w-40px relative block focus:outline-none lg:hidden`}
           onClick={this.handleClick}
         >
           <span

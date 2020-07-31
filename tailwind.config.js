@@ -7,6 +7,9 @@ module.exports = {
         serif: ["Playfair Display", ...defaultTheme.fontFamily.serif],
         sans: ["Spartan", ...defaultTheme.fontFamily.sans]
       },
+      screens: {
+        'xs': '360px',
+      },
       colors: {
         primary: {
           light: '#F9C577',

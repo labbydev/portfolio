@@ -3,12 +3,12 @@ import React from "react"
 
 const MenuItem = props => (
   <li
-    className={`ml-4`}
+    className={`mt-3 lg:mt-0`}
   >
     <Link
       to={props.to}
-      className={`inline-block no-underline`}
-      activeClassName={`text-tertiary`}
+      className={`no-underline mx-4 bracket-link hover:text-secondary-dark focus:text-secondary-dark`}
+      activeClassName={`text-secondary-dark`}
     >
       {props.children}
     </Link>
