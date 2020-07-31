@@ -36,6 +36,7 @@ const Header = ({ siteTitle }) => {
         >
           <Img
             fixed={logo.file.childImageSharp.fixed}
+            fadeIn={false}
             alt={`logo L.A.B.`}
             className={`mr-2`}
           />
