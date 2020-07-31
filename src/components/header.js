@@ -25,10 +25,10 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header
-      className={`bg-primary leading-none px-4 shadow-md`}
+      className={`bg-primary px-4 shadow-md`}
     >
       <div
-        className={`container mx-auto flex content-between py-4 flex content-between items-center justify-between`}
+        className={`container mx-auto py-4 flex items-center justify-between`}
       >
         <Link
           to="/"
@@ -63,7 +63,7 @@ const Header = ({ siteTitle }) => {
         <DesktopOnly>
           <nav>
             <ul
-              className={`uppercase tracking-wider text-sm font-semibold flex leading-normal align-bottom`}
+              className={`uppercase tracking-wider text-sm font-semibold flex align-bottom`}
               aria-label={`Primary`}
             >
               <MenuItem to={`/about/`}>About</MenuItem>

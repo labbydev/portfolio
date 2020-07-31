@@ -32,7 +32,7 @@ p {
 
 @screen lg {
     h1 {
-        @apply text-6xl;
+        @apply text-6xl tracking-wide;
     }
 }
 
@@ -106,6 +106,36 @@ p {
 .bracket-link:focus:after {
     opacity: 0.8;
     transform: translateX(0);
+}
+
+/**
+ * Styles for icon links.
+ */
+.icon-link:hover svg,
+.icon-link:focus svg {
+    @apply fill-current;
+}
+
+.icon-link:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+    top: -6px;
+    left: -6px;
+    padding: 6px;
+    box-shadow: 0 0 0 3px #fff;
+    transition: transform 0.2s,opacity 0.2s;
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+.icon-link:hover:after,
+.icon-link:focus:after {
+    transform: scale(1);
+    opacity: .5;
 }
 
 .text-shadow {
