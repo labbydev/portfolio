@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
+import SkipNav from "./skip-nav"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,9 +27,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <SkipNav />
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className={`container mx-auto py-4`}>
-        <main>{children}</main>
+        <main id={`main-content`}>{children}</main>
       </div>
       <Footer/>
     </>

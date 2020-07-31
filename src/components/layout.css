@@ -32,7 +32,7 @@ p {
 
 @screen lg {
     h1 {
-        @apply text-6xl tracking-wide;
+        @apply text-6xl;
     }
 }
 

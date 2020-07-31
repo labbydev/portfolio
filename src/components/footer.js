@@ -4,7 +4,7 @@ import { GitHub, Send, Linkedin, Droplet, Codepen } from "react-feather";
 
 const Footer = () => (
   <footer
-    className={`bg-tertiary text-sm text-gray-100 px-4 py-8 font-normal`}
+    className={`bg-tertiary text-sm text-gray-100 p-4 font-normal`}
   >
     <div className={`container mx-auto py-4 flex items-center justify-between`}>
       <p>© {new Date().getFullYear()} Lauren Burroughs</p>
