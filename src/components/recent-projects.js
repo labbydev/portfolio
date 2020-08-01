@@ -1,12 +1,11 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import Img from "gatsby-image/index"
 
 const RecentProjects = () => {
   const data = useStaticQuery(
     graphql`
       query {
-      allMarkdownRemark(filter: {frontmatter: {type: {eq: "Project"}}}, limit: 3, sort: {fields: frontmatter___roles___start, order: ASC}) {
+      allMarkdownRemark(filter: {frontmatter: {type: {eq: "Project"}}}, limit: 4, sort: {fields: frontmatter___roles___start, order: ASC}) {
         edges {
           node {
             excerpt
@@ -15,8 +14,8 @@ const RecentProjects = () => {
               path
               image {
                 childImageSharp {
-                  fluid(maxWidth: 500) {
-                    ...GatsbyImageSharpFluid
+                  resize(height: 300, width: 300, cropFocus: NORTH) {
+                    src
                   }
                 }
               }
@@ -31,17 +30,30 @@ const RecentProjects = () => {
   return (
     <div>
       <h2>Projects</h2>
-      <div>
+      <div
+        className={`sm:flex justify-between flex-wrap`}
+      >
         {data.allMarkdownRemark.edges.map(({ node }) => {
           return (
-            <div>
-              <h3><Link to={node.frontmatter.path}>{node.frontmatter.client}</Link></h3>
-              <Img fluid={node.frontmatter.image.childImageSharp.fluid} />
+            <div
+              className={`mx-auto mb-8 shadow-2xl max-w-2xs text-center bg-white sm:inline-block sm:flex-shrink-0`}
+            >
+              <img
+                className={`block`}
+                src={node.frontmatter.image.childImageSharp.resize.src}
+                alt={node.frontmatter.client + ` website`}
+              />
+              <Link
+                className={`block p-3 shadow-inner`}
+                to={node.frontmatter.path}
+              >
+                <h3>{node.frontmatter.client}</h3>
+              </Link>
             </div>
           )
         })}
-        <Link to={`/projects/`}>See all projects</Link>
       </div>
+      <Link to={`/projects/`}>See all projects</Link>
     </div>
   )
 }

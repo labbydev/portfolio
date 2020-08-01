@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
     <>
       <SkipNav />
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className={`container mx-auto py-4`}>
+      <div className={`container mx-auto p-4`}>
         <main id={`main-content`}>{children}</main>
       </div>
       <Footer/>

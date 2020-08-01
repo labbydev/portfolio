@@ -10,7 +10,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <PageTitle
-      text="Hey, I'm Lauren. I build websites."
+      text="Hey, I'm Lauren."
     />
     <Lede
       text={`I build websites. Some people call me Labby.`}

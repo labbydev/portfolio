@@ -36,7 +36,7 @@ module.exports = {
           500: '#858585',
         },
         black: '#08080C',
-        white: '#FFFCF2',
+        'off-white': '#FFFCF2',
       },
       fontSize: {
         'none': '0px',
@@ -51,6 +51,9 @@ module.exports = {
       width: {
         '40px': '40px',
       },
+      maxWidth: {
+        '2xs': '300px',
+      }
     },
   },
   variants: {

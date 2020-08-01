@@ -1,7 +1,7 @@
 @tailwind base;
 
 body {
-    @apply font-thin bg-white;
+    @apply font-thin bg-off-white;
     font-size: 18px;
     line-height: 1.5;
 }
@@ -11,18 +11,11 @@ h1 {
 }
 
 h2 {
-    @apply text-3xl  uppercase tracking-tighter text-tertiary mt-8 font-medium relative;
-}
-
-h2:before {
-    @apply absolute mr-2 left-0 top-0 text-4xl opacity-50;
-    content: '[';
-    left: -10px;
-    top: -8px;
+    @apply text-3xl text-tertiary relative font-serif font-bold italic my-5;
 }
 
 h3 {
-    @apply text-xl font-serif font-bold italic;
+    @apply text-lg uppercase my-3 font-normal;
 }
 
 h4 {
