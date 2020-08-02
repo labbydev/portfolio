@@ -44,7 +44,7 @@ const CurrentJob = () => {
         className={`flex items-center justify-around`}
       >
         <Img
-          className={`rounded-full border-double border-8 border-off-white bg-secondary-darker bg-opacity-50`}
+          className={`rounded-full border-double border-8 border-secondary-darker bg-secondary-darker bg-opacity-50 shadow-lg`}
           fixed={data.file.childImageSharp.fixed}
           alt={`Lauren Burrough's headshot`}
         />
@@ -54,16 +54,19 @@ const CurrentJob = () => {
               <h3
                 className={`text-gray-100`}
               >{node.frontmatter.company}</h3>
-              <p>{node.frontmatter.location}</p>
               {node.frontmatter.roles.map(key =>
                 <div>
-                  <h3>{key.title}</h3>
+                  <h4>{key.title}</h4>
                   <p>{ key.end ? key.start + ` - ` + key.end : key.start  }</p>
                 </div>
               )}
             </div>
           )
         })}
+        <div>
+          <p><strong>Pronouns:</strong> She/Her</p>
+          <p><strong>Location:</strong> Chicago, IL</p>
+        </div>
       </div>
       <MoreLink
         to={`/experience/`}

@@ -52,7 +52,6 @@ const Header = ({ siteTitle }) => {
                 aria-label={`Primary`}
               >
                 <FadeIn>
-                  <MenuItem to={`/about/`}>About</MenuItem>
                   <MenuItem to={`/experience/`}>Experience</MenuItem>
                   <MenuItem to={`/projects/`}>Projects</MenuItem>
                 </FadeIn>
@@ -66,7 +65,6 @@ const Header = ({ siteTitle }) => {
               className={`uppercase tracking-wider text-sm font-semibold flex align-bottom`}
               aria-label={`Primary`}
             >
-              <MenuItem to={`/about/`}>About</MenuItem>
               <MenuItem to={`/experience/`}>Experience</MenuItem>
               <MenuItem to={`/projects/`}>Projects</MenuItem>
             </ul>
