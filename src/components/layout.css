@@ -138,6 +138,15 @@ p {
     opacity: .5;
 }
 
+/**
+ * Styles for parallax items.
+ */
+@screen xs-only {
+    .parallax {
+        transform: none !important;
+    }
+}
+
 .text-shadow {
     text-shadow: 0px -1px 0px rgba(235, 145, 10, .7);
 }

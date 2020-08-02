@@ -45,7 +45,7 @@ const Header = ({ siteTitle }) => {
         <MobileOnly>
           <MenuToggle>
             <nav
-              className={`absolute left-0 bg-primary w-full p-4`}
+              className={`absolute left-0 bg-primary w-full p-4 z-50 shadow-md`}
             >
               <ul
                 className={`uppercase tracking-wider text-sm font-semibold mt-4`}

@@ -13,12 +13,19 @@ const IndexPage = () => (
     <BandedSectiton>
       <PageTitle text="Hey, I'm Lauren."/>
       <Lede text={`I build websites. Some people call me Labby.`}/>
-      <p>Fusing together a background in journalism and design with a vast knowledge of Drupal, accessibility and web development, I lead teams of engineers to build dynamic websites and create online relationships to help clients reach their users in new and impactful ways. </p>
+      <Lede text={`Fusing together a background in journalism and design with a vast knowledge of Drupal, accessibility and web development, I lead teams of engineers to build dynamic websites and create online relationships to help clients reach their users in new and impactful ways. `}/>
     </BandedSectiton>
-    <BandedSectiton backgroundColor={`gray`}>
+    <BandedSectiton
+      backgroundColor={`gray`}
+      classes={`sm:py-20`}
+    >
         <RecentProjects />
     </BandedSectiton>
-    <BandedSectiton backgroundColor={`secondary`} textColor={`light`}>
+    <BandedSectiton
+      backgroundColor={`secondary`}
+      textColor={`light`}
+      classes={`-z-10`}
+    >
         <CurrentJob />
     </BandedSectiton>
   </Layout>

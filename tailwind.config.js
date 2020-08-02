@@ -12,6 +12,7 @@ module.exports = {
       },
       screens: {
         'xs': '360px',
+        'xs-only': {'max': '639px'},
       },
       colors: {
         primary: {
@@ -47,6 +48,7 @@ module.exports = {
       height: {
         '4px': '4px',
         '50px': '50px',
+        '3/4': '75vh'
       },
       width: {
         '40px': '40px',
@@ -59,6 +61,9 @@ module.exports = {
       },
       inset: {
         '1/2': '50%',
+      },
+      zIndex: {
+        '-10': '-10',
       }
     },
   },

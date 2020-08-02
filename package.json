@@ -21,6 +21,7 @@
     "react-fade-in": "^1.1.0",
     "react-feather": "^2.0.8",
     "react-helmet": "^6.1.0",
+    "rellax": "^1.12.1",
     "typeface-playfair-display": "^1.1.4",
     "typeface-spartan": "^1.1.4"
   },

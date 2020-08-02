@@ -31,7 +31,9 @@ const CurrentJob = () => {
         {data.allMarkdownRemark.edges.map(({ node }) => {
           return (
             <div>
-              <h3>{node.frontmatter.company}</h3>
+              <h3
+                className={`text-gray-100`}
+              >{node.frontmatter.company}</h3>
               <p>{node.frontmatter.location}</p>
               {node.frontmatter.roles.map(key =>
                 <div>

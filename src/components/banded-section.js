@@ -11,12 +11,13 @@ const textColors = {
   light: `text-white`,
 }
 
-const BandedSectiton = ({ children, backgroundColor, textColor }) => {
+const BandedSectiton = ({ children, backgroundColor, textColor, classes }) => {
   return (
     <div className={`
       ${backgroundColors[backgroundColor] || backgroundColors.default}
-      ${textColors[textColor] || ``}
-      py-4 w-screen -ml-50 relative left-1/2 shadow-md
+      ${textColor ? textColors[textColor] : ''}
+      ${classes ? classes : ''}
+      py-6 sm:py-10 lg:py-8 xl:py-12 w-screen -ml-50 relative left-1/2 shadow-md
     `}>
       <div
         className={`container mx-auto px-4`}
