@@ -53,6 +53,12 @@ module.exports = {
       },
       maxWidth: {
         '2xs': '300px',
+      },
+      margin: {
+        '-50': '-50vw',
+      },
+      inset: {
+        '1/2': '50%',
       }
     },
   },

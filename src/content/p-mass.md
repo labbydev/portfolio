@@ -1,20 +1,20 @@
 ---
-client: American Medical Association
-image: ../images/ama-assn.png
+client: Mass.gov
+image: ../images/mass.png
 roles: 
   - 
-    title: Technical Architect
-    start: 2017-09-10
-    end: 2018-10-20
+    title: Frontend Lead
+    start: 2017-03-10
+    end: 2017-09-27
 sites: 
   - 
-    title: AMA
-    link: https://www.ama-assn.org/
+    title: Mass.gov
+    link: https://www.mass.gov/
 tags:
   - drupal
   - palantirnet
-  - staff aug
-path: /projects/ama/
+  - gov
+path: /projects/mass-gov/
 type: Project
 ---
 

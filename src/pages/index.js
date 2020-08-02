@@ -5,19 +5,22 @@ import SEO from "../components/seo"
 import RecentProjects from "../components/recent-projects"
 import CurrentJob from "../components/current-job"
 import Lede from "../components/lede"
+import BandedSectiton from "../components/banded-section"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <PageTitle
-      text="Hey, I'm Lauren."
-    />
-    <Lede
-      text={`I build websites. Some people call me Labby.`}
-    />
-    <p>Fusing together a background in journalism and design with a vast knowledge of Drupal, accessibility and web development, I lead teams of engineers to build dynamic websites and create online relationships to help clients reach their users in new and impactful ways. </p>
-    <RecentProjects />
-    <CurrentJob />
+    <BandedSectiton>
+      <PageTitle text="Hey, I'm Lauren."/>
+      <Lede text={`I build websites. Some people call me Labby.`}/>
+      <p>Fusing together a background in journalism and design with a vast knowledge of Drupal, accessibility and web development, I lead teams of engineers to build dynamic websites and create online relationships to help clients reach their users in new and impactful ways. </p>
+    </BandedSectiton>
+    <BandedSectiton backgroundColor={`gray`}>
+        <RecentProjects />
+    </BandedSectiton>
+    <BandedSectiton backgroundColor={`secondary`} textColor={`light`}>
+        <CurrentJob />
+    </BandedSectiton>
   </Layout>
 )
 
