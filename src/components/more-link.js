@@ -11,7 +11,7 @@ const colors = {
 const MoreLink = ({color, children, to}) => {
   return (
     <Link
-      className={ colors[color] + ` more-link float-right flex items-center uppercase tracking-wider text-sm`}
+      className={ colors[color] + ` more-link absolute bottom-0 right-0 flex items-center uppercase tracking-wider text-sm`}
       to={to}
     >
       <span

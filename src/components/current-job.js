@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import MoreLink from "./more-link"
+import Img from "gatsby-image"
 
 const CurrentJob = () => {
   const data = useStaticQuery(
@@ -21,14 +22,32 @@ const CurrentJob = () => {
                     }
                 }
             }
+            file: file(relativePath: { eq: "headshot.png" }) {
+              childImageSharp {
+                fixed(height:400) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
         }
     `
   )
 
   return (
-    <div>
-      <h2>Current Job</h2>
-      <div>
+    <div
+      className={`relative`}
+    >
+      <h2
+        className={`invisible absolute`}
+      >Current Job</h2>
+      <div
+        className={`flex items-center justify-around`}
+      >
+        <Img
+          className={`rounded-full border-double border-8 border-off-white bg-secondary-darker bg-opacity-50`}
+          fixed={data.file.childImageSharp.fixed}
+          alt={`Lauren Burrough's headshot`}
+        />
         {data.allMarkdownRemark.edges.map(({ node }) => {
           return (
             <div>

@@ -31,7 +31,7 @@ const RecentProjects = () => {
 
   useEffect(() => {
     new Rellax(".parallax-slow", {
-      speed: -3,
+      speed: -2,
       zIndex: 100,
       wrapper: false,
     });
@@ -43,7 +43,9 @@ const RecentProjects = () => {
   }, []);
 
   return (
-    <div>
+    <div
+      className={`relative`}
+    >
       <h2>Projects</h2>
       <div
         className={`sm:flex justify-around flex-wrap items-center sm:mb-32 lg:-mb-40 xl:mb-8 xl:mt-8`}
