@@ -17,7 +17,7 @@ const BandedSectiton = ({ children, backgroundColor, textColor, classes }) => {
       ${backgroundColors[backgroundColor] || backgroundColors.default}
       ${textColor ? textColors[textColor] : ''}
       ${classes ? classes : ''}
-      py-6 sm:py-10 lg:py-8 xl:py-12 w-screen -ml-50 relative left-1/2 shadow-md
+      py-6 sm:py-10 lg:py-8 xl:py-12 overflow-hidden w-screen -ml-50 relative left-1/2 shadow-inner
     `}>
       <div
         className={`container mx-auto px-4`}

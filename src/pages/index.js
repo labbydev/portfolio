@@ -24,7 +24,6 @@ const IndexPage = () => (
     <BandedSectiton
       backgroundColor={`secondary`}
       textColor={`light`}
-      classes={`-z-10`}
     >
         <CurrentJob />
     </BandedSectiton>

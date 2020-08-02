@@ -1,6 +1,7 @@
 import React, { useEffect } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Rellax from "rellax"
+import MoreLink from "./more-link"
 
 const RecentProjects = () => {
   const data = useStaticQuery(
@@ -52,7 +53,7 @@ const RecentProjects = () => {
             <div
               className={
                 ((index.toString() % 2 !== 0) ? `parallax parallax-fast sm:mt-20 lg:mt-32` : `parallax parallax-slow sm:-mt-20 lg:-mt-32`) +
-                ` mb-8 sm:mb-0 shadow-2xl max-w-2xs text-center bg-white sm:inline-block sm:flex-shrink-0`}
+                `  transition ease-in-out rounded-sm overflow-hidden mb-8 sm:mb-0 shadow-2xl max-w-2xs text-center bg-white sm:inline-block sm:flex-shrink-0`}
             >
               <img
                 className={`block`}
@@ -69,7 +70,9 @@ const RecentProjects = () => {
           )
         })}
       </div>
-      <Link to={`/projects/`}>See all projects</Link>
+      <MoreLink
+        to={`/projects/`}
+      >See all projects</MoreLink>
     </div>
   )
 }

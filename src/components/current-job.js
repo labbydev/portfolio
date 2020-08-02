@@ -1,5 +1,6 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
+import MoreLink from "./more-link"
 
 const CurrentJob = () => {
   const data = useStaticQuery(
@@ -45,7 +46,10 @@ const CurrentJob = () => {
           )
         })}
       </div>
-      <Link to={`/experience/`}>See my resume</Link>
+      <MoreLink
+        to={`/experience/`}
+        color={`light`}
+      >See my resume</MoreLink>
     </div>
   )
 }

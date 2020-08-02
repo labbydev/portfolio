@@ -147,6 +147,19 @@ p {
     }
 }
 
+/**
+ * More link styling.
+ */
+.more-link:hover .opacity-0,
+.more-link:focus .opacity-0{
+    @apply opacity-100;
+}
+
+.more-link:hover .translate-x-20,
+.more-link:focus .translate-x-20{
+    @apply translate-x-32;
+}
+
 .text-shadow {
     text-shadow: 0px -1px 0px rgba(235, 145, 10, .7);
 }
