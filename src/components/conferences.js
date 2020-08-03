@@ -26,9 +26,7 @@ const Conferences = () => {
   function Title(props) {
     if ((props.url !== null) && (props.subtitle !== null)) {
       return (
-        <Link to={props.url}>
-          <h3>{props.title}: <span>{props.subtitle}</span></h3>
-        </Link>
+        <h3><a href={props.url}>{props.title}: <span>{props.subtitle}</span></a></h3>
       )
     } else if (props.subtitle !== null) {
       return (
@@ -36,9 +34,7 @@ const Conferences = () => {
       )
     } else if (props.url !== null) {
       return (
-        <Link to={props.url}>
-          <h3>{props.title}</h3>
-        </Link>
+        <h3><a href={props.url}>{props.title}</a></h3>
       )
     }
     else {

@@ -1,7 +1,11 @@
 @tailwind base;
 
+* {
+    @apply transition duration-300 ease-in-out;
+}
+
 body {
-    @apply font-thin bg-off-white;
+    @apply font-light bg-off-white text-tertiary-dark;
     font-size: 18px;
     line-height: 1.5;
 }
@@ -11,16 +15,16 @@ h1 {
 }
 
 h2 {
-    @apply text-3xl text-tertiary relative font-serif font-bold italic my-5;
+    @apply text-3xl text-tertiary-dark relative font-serif font-extrabold italic my-5;
 }
 
 h3 {
-    @apply text-lg uppercase my-3 font-medium tracking-wide leading-relaxed underline;
+    @apply text-lg text-tertiary uppercase my-3 font-bold tracking-wide leading-relaxed underline;
     text-underline-position: under;
 }
 
 h4 {
-    @apply text-lg my-3;
+    @apply my-3 font-semibold;
 }
 
 a {

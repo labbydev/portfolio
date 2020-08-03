@@ -55,7 +55,9 @@ const CurrentJob = () => {
                 if ((index === 0) && (node.frontmatter.url !== null) ){
                   return (
                     <div>
-                      <h3>{key.title}</h3>
+                      <h3
+                        className={`text-white`}
+                      >{key.title}</h3>
                       <a
                         className={`block text-secondary-darker`}
                         href={node.frontmatter.url}

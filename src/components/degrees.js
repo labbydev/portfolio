@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Circle } from "react-feather"
 
 const Degrees = () => {
   const data = useStaticQuery(
@@ -27,11 +28,12 @@ const Degrees = () => {
       <div>
         {data.allMarkdownRemark.edges.map(({ node }) => {
           return (
-            <div>
+            <div
+              className={`mb-8`}
+            >
               <h3>{node.frontmatter.university}</h3>
-              <p>{node.frontmatter.location}</p>
               <h4>{node.frontmatter.degree}</h4>
-              <p>{ node.frontmatter.date }</p>
+              { node.frontmatter.location } <Circle className={`fill-current inline-block h-2 w-4 text-gray-300 -mt-1`} strokeWidth={.5} /> {node.frontmatter.date}
             </div>
           )
         })}
