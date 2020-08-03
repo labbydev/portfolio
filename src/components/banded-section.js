@@ -12,7 +12,7 @@ const textColors = {
   light: `text-white`,
 }
 
-const BandedSectiton = ({ children, backgroundColor, textColor, classes }) => {
+const BandedSection = ({ children, backgroundColor, textColor, classes }) => {
   return (
     <div className={`
       ${backgroundColors[backgroundColor] || backgroundColors.default}
@@ -29,4 +29,4 @@ const BandedSectiton = ({ children, backgroundColor, textColor, classes }) => {
   )
 }
 
-export default BandedSectiton
+export default BandedSection
