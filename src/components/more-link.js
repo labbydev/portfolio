@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import { MoreHorizontal, ChevronsRight } from "react-feather"
 
 const colors = {
-  default: ` `,
   light: `text-gray-100`,
   dark: `text-tertiary-dark`,
 }
@@ -11,7 +10,7 @@ const colors = {
 const MoreLink = ({color, children, to}) => {
   return (
     <Link
-      className={ colors[color] + ` more-link sm:absolute bottom-0 right-0 flex items-center uppercase tracking-wider text-sm`}
+      className={ (color ? colors[color] : 'stat') + ` text-right justify-end more-link md:absolute bottom-0 right-0 flex items-center uppercase tracking-wider text-sm`}
       to={to}
     >
       <span

@@ -46,7 +46,7 @@ const RecentProjects = () => {
     >
       <h2>Projects</h2>
       <div
-        className={`sm:flex justify-around flex-wrap items-center sm:mb-32 lg:-mb-40 xl:mb-8 xl:mt-8`}
+        className={`sm:flex justify-around flex-wrap items-center sm:mb-32 lg:mb-0 xl:mb-8 xl:mt-8`}
       >
         {data.allMarkdownRemark.edges.map(({ node }, index) => {
           return (

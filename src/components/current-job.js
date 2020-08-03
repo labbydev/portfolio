@@ -24,8 +24,8 @@ const CurrentJob = () => {
             }
             file: file(relativePath: { eq: "headshot.png" }) {
               childImageSharp {
-                fixed(height:400) {
-                  ...GatsbyImageSharpFixed
+                fluid(maxHeight:400) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -44,8 +44,8 @@ const CurrentJob = () => {
         className={`flex items-center justify-around`}
       >
         <Img
-          className={`rounded-full border-double border-8 border-secondary-darker bg-secondary-darker bg-opacity-50 shadow-lg`}
-          fixed={data.file.childImageSharp.fixed}
+          className={`hidden md:inline-block rounded-full w-1/3 border-double border-8 border-secondary-darker bg-secondary-darker bg-opacity-50 shadow-lg`}
+          fluid={data.file.childImageSharp.fluid}
           alt={`Lauren Burrough's headshot`}
         />
         {data.allMarkdownRemark.edges.map(({ node }) => {
