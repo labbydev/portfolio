@@ -32,12 +32,10 @@ const RecentProjects = () => {
   useEffect(() => {
     new Rellax(".parallax-slow", {
       speed: -2,
-      zIndex: 100,
       wrapper: false,
     });
     new Rellax(".parallax-fast", {
       speed: 3,
-      zIndex: 100,
       wrapper: false,
     });
   }, []);
@@ -55,7 +53,7 @@ const RecentProjects = () => {
             <div
               className={
                 ((index.toString() % 2 !== 0) ? `parallax parallax-fast sm:mt-20 lg:mt-32` : `parallax parallax-slow sm:-mt-20 lg:-mt-32`) +
-                `  transition ease-in-out rounded-sm overflow-hidden mb-8 sm:mb-0 shadow-2xl max-w-2xs text-center bg-white sm:inline-block sm:flex-shrink-0`}
+                `  z-20 transition ease-in-out rounded-sm overflow-hidden mb-8 sm:mb-0 shadow-2xl max-w-2xs text-center bg-white sm:inline-block sm:flex-shrink-0`}
             >
               <img
                 className={`block`}

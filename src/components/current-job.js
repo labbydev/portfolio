@@ -12,10 +12,10 @@ const CurrentJob = () => {
                     node {
                         frontmatter {
                             company
+                            url
                             location
                             roles {
-                                end(formatString: "MMM YYYY")
-                                start(formatString: "MMM YYYY")
+                                start(difference: "years")
                                 title
                             }
                         }
@@ -51,15 +51,20 @@ const CurrentJob = () => {
         {data.allMarkdownRemark.edges.map(({ node }) => {
           return (
             <div>
-              <h3
-                className={`text-gray-100`}
-              >{node.frontmatter.company}</h3>
-              {node.frontmatter.roles.map(key =>
-                <div>
-                  <h4>{key.title}</h4>
-                  <p>{ key.end ? key.start + ` - ` + key.end : key.start  }</p>
-                </div>
-              )}
+              {node.frontmatter.roles.map((key, index) => {
+                if ((index === 0) && (node.frontmatter.url !== null) ){
+                  return (
+                    <div>
+                      <h3>{key.title}</h3>
+                      <a
+                        className={`block text-secondary-darker`}
+                        href={node.frontmatter.url}
+                      >{node.frontmatter.company}</a>
+                      <small>{(key.start === "1") ? (`a year`) : (key.start + ` years`)}</small>
+                    </div>
+                  )
+                }
+              })}
             </div>
           )
         })}

@@ -18,6 +18,7 @@ roles:
     start: 2018-08-06
     end: 2018-10-20
 location: Chicago, IL
+url: https://www.palantir.net/
 start: 2014
 type: Job
 ---

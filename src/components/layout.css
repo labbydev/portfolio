@@ -15,7 +15,8 @@ h2 {
 }
 
 h3 {
-    @apply text-lg uppercase my-3 font-normal;
+    @apply text-lg uppercase my-3 font-medium tracking-wide leading-relaxed underline;
+    text-underline-position: under;
 }
 
 h4 {
@@ -33,6 +34,10 @@ p {
 @screen lg {
     h1 {
         @apply text-6xl;
+    }
+
+    h3 {
+        @apply text-xl leading-loose;
     }
 }
 
@@ -113,7 +118,7 @@ p {
  */
 .icon-link:hover svg,
 .icon-link:focus svg {
-    @apply fill-current;
+    @apply stroke-2;
 }
 
 .icon-link:after {

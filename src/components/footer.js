@@ -6,11 +6,14 @@ const Footer = () => (
   <footer
     className={`bg-tertiary text-sm text-gray-100 p-4 font-normal`}
   >
-    <div className={`container mx-auto py-4 flex items-center justify-between`}>
-      <p>© {new Date().getFullYear()} Lauren Burroughs</p>
+    <div className={`container mx-auto py-4 sm:flex items-center justify-between`}>
+      <p
+        className={`mb-8 sm:mb-0 text-center`}
+      >© {new Date().getFullYear()} Lauren Burroughs</p>
       <nav>
         <ul
           aria-label={`Footer Menu`}
+          className={`text-center`}
         >
           <IconMenuItem
             to={`mailto:labyrwa@gmail.com`}

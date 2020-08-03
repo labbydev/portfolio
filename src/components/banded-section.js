@@ -2,6 +2,7 @@ import React from "react"
 
 const backgroundColors = {
   default: `bg-transparent`,
+  primary: `bg-primary-dark`,
   secondary: `bg-secondary-dark`,
   tertiary: `bg-tertiary-dark`,
   gray: `bg-gray-100`,
