@@ -11,20 +11,20 @@ body {
 }
 
 h1 {
-    @apply text-4xl text-secondary-dark text-center my-3 font-serif font-black my-10;
+    @apply text-4xl text-secondary-dark text-center tracking-wide my-3 font-serif font-black my-10;
 }
 
 h2 {
-    @apply text-3xl text-tertiary-dark relative font-serif font-extrabold italic my-5;
+    @apply text-3xl text-primary-darker relative tracking-wide font-serif font-extrabold italic my-5;
 }
 
 h3 {
-    @apply text-lg text-tertiary uppercase my-3 font-bold tracking-wide leading-relaxed underline;
+    @apply text-lg text-tertiary uppercase mt-3 mb-1 font-bold tracking-wide leading-relaxed underline;
     text-underline-position: under;
 }
 
 h4 {
-    @apply my-3 font-semibold;
+    @apply mb-1 mt-2 font-semibold;
 }
 
 a {
