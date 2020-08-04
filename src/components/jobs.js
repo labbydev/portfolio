@@ -13,8 +13,8 @@ const Jobs = () => {
                             company
                             location
                             roles {
-                                end(formatString: "MMM YYYY")
-                                start(formatString: "MMM YYYY")
+                                end(formatString: "MMMM YYYY")
+                                start(formatString: "MMMM YYYY")
                                 title
                             }
                         }

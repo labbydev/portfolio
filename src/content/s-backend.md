@@ -5,6 +5,7 @@ conference: Capital Camp
 location: Bethesda, MD
 date: 2014-07-30
 url: https://labbydev.github.io/firm-up-backend/#/
+image: ../images/backend.png
 type: Conference
 ---
 

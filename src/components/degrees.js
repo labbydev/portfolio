@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Circle } from "react-feather"
+import { Hexagon } from "react-feather"
 
 const Degrees = () => {
   const data = useStaticQuery(
@@ -33,7 +33,7 @@ const Degrees = () => {
             >
               <h3>{node.frontmatter.university}</h3>
               <h4>{node.frontmatter.degree}</h4>
-              { node.frontmatter.location } <Circle className={`fill-current inline-block h-2 w-4 text-gray-300 -mt-1`} strokeWidth={.5} /> {node.frontmatter.date}
+              { node.frontmatter.location } <Hexagon className={`fill-current inline-block h-2 w-4 text-gray-300 -mt-1`} strokeWidth={.5} /> {node.frontmatter.date}
             </div>
           )
         })}
