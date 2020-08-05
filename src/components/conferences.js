@@ -35,7 +35,7 @@ const Conferences = () => {
     if ((props.url !== null) && (props.subtitle !== null)) {
       return (
         <h3>
-          <a href={props.url} className={`block`}>{props.title}
+          <a href={props.url} className={`inline-block`}>{props.title}
             <span
               className={`block text-sm`}
             >{props.subtitle}</span>
@@ -48,7 +48,7 @@ const Conferences = () => {
       )
     } else if (props.url !== null) {
       return (
-        <h3><a href={props.url} className={`block`}>{props.title}</a></h3>
+        <h3><a href={props.url} className={`inline-block`}>{props.title}</a></h3>
       )
     }
     else {

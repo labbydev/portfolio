@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import Rellax from "rellax"
 import MoreLink from "./more-link"
 
