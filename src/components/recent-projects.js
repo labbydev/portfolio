@@ -44,7 +44,7 @@ const RecentProjects = () => {
     <div
       className={`relative`}
     >
-      <h2>Projects</h2>
+      <h2>Recent Projects</h2>
       <div
         className={`sm:flex justify-around flex-wrap items-center sm:mb-32 lg:mb-0 xl:mb-8 xl:mt-8`}
       >

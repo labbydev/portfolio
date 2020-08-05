@@ -210,6 +210,21 @@ p {
     @apply bg-transparent;
 }
 
+/**
+ * Rhombus Image styling.
+ */
+.rhombus {
+    margin-bottom: -52%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transform: scale(1);
+    transition: all .25s;
+}
+
+.rhombus:hover {
+    transform: scale(2);
+    z-index: 20;
+}
+
 .text-shadow {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, .2);
 }
