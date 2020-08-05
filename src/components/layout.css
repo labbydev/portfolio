@@ -28,7 +28,23 @@ h4 {
 }
 
 a {
-    @apply text-secondary font-semibold;
+    @apply text-secondary font-semibold relative z-10;
+}
+
+a:after {
+    @apply bg-primary absolute left-0 top-0 w-0 overflow-hidden h-full -z-10;
+    content: '';
+    transition: all 700ms cubic-bezier(0.51, 0.04, 0.12, 0.99);
+}
+
+a:focus,
+a:hover {
+    @apply text-secondary-darker;
+}
+
+a:hover:after,
+a:focus:after {
+    @apply w-full visible;
 }
 
 p {
@@ -91,7 +107,7 @@ p {
  */
 .bracket-link:before,
 .bracket-link:after {
-    display: inline-block;
+    @apply inline-block top-auto left-auto;
     opacity: 0;
     transition: transform 0.3s, opacity 0.2s;
     font-size: 1.25rem;
@@ -120,6 +136,11 @@ p {
 /**
  * Styles for icon links.
  */
+.icon-link:hover:after,
+.icon-link:focus:after {
+    @apply bg-transparent;
+}
+
 .icon-link:hover svg,
 .icon-link:focus svg {
     @apply stroke-2;
@@ -159,6 +180,10 @@ p {
 /**
  * More link styling.
  */
+.more-link:after {
+    @apply bg-transparent;
+}
+
 .more-link:hover .opacity-0,
 .more-link:focus .opacity-0{
     @apply opacity-100;
@@ -167,6 +192,11 @@ p {
 .more-link:hover .translate-x-20,
 .more-link:focus .translate-x-20{
     @apply translate-x-32;
+}
+
+.more-link:hover:after,
+.more-link:focus:after {
+    @apply bg-transparent;
 }
 
 .text-shadow {

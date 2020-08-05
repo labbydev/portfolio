@@ -60,18 +60,22 @@ const RecentProjects = () => {
                 src={node.frontmatter.image.childImageSharp.resize.src}
                 alt={node.frontmatter.client + ` website`}
               />
-              <Link
-                className={`block p-3 shadow-inner`}
-                to={node.frontmatter.path}
-              >
-                <h3>{node.frontmatter.client}</h3>
-              </Link>
+              {/* @TODO: add back the link once project pages have real content. */}
+              {/*<Link*/}
+              {/*  className={`link--dark block p-3 shadow-inner`}*/}
+              {/*  to={node.frontmatter.path}*/}
+              {/*>*/}
+                <h3
+                  className={`p-3 shadow-inner`}
+                >{node.frontmatter.client}</h3>
+              {/*</Link>*/}
             </div>
           )
         })}
       </div>
       <MoreLink
         to={`/projects/`}
+        color={`default`}
       >See all projects</MoreLink>
     </div>
   )
