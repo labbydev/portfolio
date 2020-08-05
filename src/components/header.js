@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => {
       >
         <Link
           to="/"
-          className={`text-shadow font-serif font-bold text-white no-underline text-xl lg:text-3xl inline-block flex items-center italic tracking-wide`}
+          className={`logo text-shadow font-serif font-bold text-white no-underline text-xl lg:text-3xl inline-block flex items-center italic tracking-wide`}
         >
           <Img
             fixed={logo.file.childImageSharp.fixed}

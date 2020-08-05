@@ -8,7 +8,7 @@ const MenuItem = props => (
     <Link
       to={props.to}
       className={`no-underline block mx-4 bracket-link hover:text-secondary-dark focus:text-secondary-dark`}
-      activeClassName={`text-secondary-dark`}
+      activeClassName={`text-secondary-dark text-shadow`}
     >
       {props.children}
     </Link>

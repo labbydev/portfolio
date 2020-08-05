@@ -12,6 +12,7 @@ body {
 
 h1 {
     @apply text-4xl text-secondary-dark text-center tracking-wide my-3 font-serif font-black my-10;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, .5);
 }
 
 h2 {
@@ -28,11 +29,11 @@ h4 {
 }
 
 a {
-    @apply text-secondary font-semibold relative z-10;
+    @apply text-secondary font-semibold relative z-10 inline-block;
 }
 
 a:after {
-    @apply bg-primary absolute top-0 w-0 overflow-hidden h-full -z-10 opacity-75 transform -skew-x-12;
+    @apply bg-primary absolute top-0 w-0 overflow-hidden h-full -z-10 opacity-75 transform -skew-x-12 shadow-inner;
     content: '';
     left: -2.5%;
     transition: all 700ms cubic-bezier(0.51, 0.04, 0.12, 0.99);
@@ -41,6 +42,7 @@ a:after {
 a:focus,
 a:hover {
     @apply text-secondary-dark;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, .1);
 }
 
 a:hover:after,
@@ -67,6 +69,13 @@ p {
 @tailwind utilities;
 
 /**
+ * Styles for logo link.
+ */
+.logo:after {
+    @apply shadow-none;
+}
+
+/**
  * Styles for CSS-only hamburger.
  */
 .hamburger {
@@ -79,7 +88,7 @@ p {
 
 .hamburger:before,
 .hamburger:after {
-    @apply bg-secondary h-full w-full absolute left-0;
+    @apply bg-secondary h-full w-full absolute left-0 shadow-none;
     content: '';
     transition: transform 0.3s;
 }
@@ -109,7 +118,7 @@ p {
  */
 .bracket-link:before,
 .bracket-link:after {
-    @apply inline-block top-auto left-auto;
+    @apply inline-block top-auto left-auto shadow-none;
     opacity: 0;
     transition: transform 0.3s, opacity 0.2s;
     font-size: 1.25rem;
@@ -183,7 +192,7 @@ p {
  * More link styling.
  */
 .more-link:after {
-    @apply bg-transparent;
+    @apply bg-transparent shadow-none;
 }
 
 .more-link:hover .opacity-0,
@@ -202,5 +211,5 @@ p {
 }
 
 .text-shadow {
-    text-shadow: 0px -1px 0px rgba(235, 145, 10, .7);
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, .2);
 }
