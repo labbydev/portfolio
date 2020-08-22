@@ -21,7 +21,7 @@ const Projects = ({ data }) => {
           {data.allMarkdownRemark.edges.map(({ node }) => {
             return (
               <div
-                className={`lg:col-span-2`}
+                className={`lg:col-span-2 lg:mb-12`}
               >
                 <h2> {node.frontmatter.client} </h2>
                 <Img

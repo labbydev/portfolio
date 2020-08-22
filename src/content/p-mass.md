@@ -1,5 +1,5 @@
 ---
-client: Mass.gov
+client: Commonwealth of Massachusetts
 image: ../images/mass.png
 roles: 
   - 
