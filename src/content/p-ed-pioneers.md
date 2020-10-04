@@ -13,8 +13,8 @@ sites:
 tags:
   - drupal
   - rcsm
-  - government
-path: /projects/cfa/
+  - non-profit
+path: /projects/education-pioneers/
 type: Project
 ---
 
