@@ -38,8 +38,8 @@ module.exports = {
         name: `Lauren Burroughs`,
         short_name: `labbydev`,
         start_url: `/`,
-        background_color: `#F59D16`,
-        theme_color: false,
+        background_color: `#08080C`,
+        theme_color: `#F59D16`,
         display: `standalone`,
         icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },

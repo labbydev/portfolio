@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import Lede from "../components/lede"
 
 const Projects = ({ data }) => {
   return (
@@ -14,7 +13,6 @@ const Projects = ({ data }) => {
         className={`py-6 sm:py-10 lg:py-8 xl:py-12`}
       >
         <PageTitle text="Projects"/>
-        {/*<Lede text={`What work have I actually done, though?`} />*/}
         <div
           className={`relative md:grid grid-cols-2 lg:grid-cols-6 gap-2 justify-around items-end`}
         >

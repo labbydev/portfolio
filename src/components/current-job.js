@@ -65,6 +65,16 @@ const CurrentJob = () => {
                       <small>{(key.start === "1") ? (`a year`) : (key.start + ` years`)}</small>
                     </div>
                   )
+                } else {
+                  return (
+                    <div>
+                      <h3
+                        className={`text-white`}
+                      >{key.title}</h3>
+                      {node.frontmatter.company}
+                      <small>{(key.start === "1") ? (`a year`) : (key.start + ` years`)}</small>
+                    </div>
+                  )
                 }
               })}
             </div>
