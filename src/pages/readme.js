@@ -3,7 +3,9 @@ import PageTitle from "../components/page-title"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Lede from "../components/lede"
+import IconMenuItem from "../components/menu-item--icon"
 import { graphql, Link } from "gatsby"
+import { GitHub, Send, Linkedin, Droplet, Codepen } from "react-feather";
 
 export default function README({ data }) {
   return (
@@ -32,11 +34,40 @@ export default function README({ data }) {
         <h2>Feedback</h2>
         <p>I am constantly looking for feedback, so please trust me when I say you won't offend me. Whatever your feedback may be please just keep it honest and timely. While I appreciate constructive criticism I also like to process my reaction, note my areas of improvement and catalog my progress, therefore I prefer to receive feedback in a written manner.</p>
         <p>Likewise, you can expect me to give candid and timely feedback to you. Please, let me know how you prefer to receive feedback.</p>
-        <ul>
-          <li><Link to={`https://www.linkedin.com/in/labbydev/`}>LinkedIn</Link></li>
-          <li><Link to={`https://github.com/labbydev?tab=repositories`}>GitHub</Link></li>
-          <li><Link to={`https://twitter.com/labbydev`}>Twitter</Link></li>
-          <li><Link to={`https://www.drupal.org/u/labbydev`}>Drupal.org</Link></li>
+        <ul
+          aria-label={`Contact Menu`}
+          className={`text-center`}
+        >
+          <IconMenuItem
+            to={`mailto:labyrwa@gmail.com`}
+            label={`Send Email`}
+          >
+            <Send strokeWidth={1}/>
+          </IconMenuItem>
+          <IconMenuItem
+            to={`https://www.linkedin.com/in/labbydev/`}
+            label={`See LinkedIn profile`}
+          >
+            <Linkedin strokeWidth={1}/>
+          </IconMenuItem>
+          <IconMenuItem
+            to={`https://drupal.org/u/labbydev`}
+            label={`See Drupal user profile`}
+          >
+            <Droplet strokeWidth={1}/>
+          </IconMenuItem>
+          <IconMenuItem
+            to={`https://github.com/labbydev`}
+            label={`See GitHub profile`}
+          >
+            <GitHub strokeWidth={1}/>
+          </IconMenuItem>
+          <IconMenuItem
+            to={`https://codepen.io/labbydev`}
+            label={`See CodePen profile`}
+          >
+            <Codepen strokeWidth={1}/>
+          </IconMenuItem>
         </ul>
       </div>
       <p>Looking for more details? Read more about what it's like <Link to={`/blog/working-with-me/`}>Working with me</Link>.</p>
