@@ -54,6 +54,7 @@ const Header = ({ siteTitle }) => {
                 <FadeIn>
                   <MenuItem to={`/experience/`}>Experience</MenuItem>
                   <MenuItem to={`/projects/`}>Projects</MenuItem>
+                  <MenuItem to={`/readme/`}>README</MenuItem>
                 </FadeIn>
               </ul>
             </nav>
@@ -67,6 +68,7 @@ const Header = ({ siteTitle }) => {
             >
               <MenuItem to={`/experience/`}>Experience</MenuItem>
               <MenuItem to={`/projects/`}>Projects</MenuItem>
+              <MenuItem to={`/readme/`}>README</MenuItem>
             </ul>
           </nav>
         </DesktopOnly>
