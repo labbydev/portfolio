@@ -18,30 +18,35 @@ const Footer = () => (
           <IconMenuItem
             to={`mailto:labyrwa@gmail.com`}
             label={`Send Email`}
+            bgColor={`gray`}
           >
             <Send strokeWidth={1}/>
           </IconMenuItem>
           <IconMenuItem
             to={`https://www.linkedin.com/in/labbydev/`}
             label={`See LinkedIn profile`}
+            bgColor={`gray`}
           >
             <Linkedin strokeWidth={1}/>
           </IconMenuItem>
           <IconMenuItem
             to={`https://drupal.org/u/labbydev`}
             label={`See Drupal user profile`}
+            bgColor={`gray`}
           >
             <Droplet strokeWidth={1}/>
           </IconMenuItem>
           <IconMenuItem
             to={`https://github.com/labbydev`}
             label={`See GitHub profile`}
+            bgColor={`gray`}
           >
             <GitHub strokeWidth={1}/>
           </IconMenuItem>
           <IconMenuItem
             to={`https://codepen.io/labbydev`}
             label={`See CodePen profile`}
+            bgColor={`gray`}
           >
             <Codepen strokeWidth={1}/>
           </IconMenuItem>

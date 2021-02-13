@@ -36,35 +36,40 @@ export default function README({ data }) {
         <p>Likewise, you can expect me to give candid and timely feedback to you. Please, let me know how you prefer to receive feedback.</p>
         <ul
           aria-label={`Contact Menu`}
-          className={`text-center`}
+          className={`text-center mt-8 mb-8`}
         >
           <IconMenuItem
             to={`mailto:labyrwa@gmail.com`}
             label={`Send Email`}
+            bgColor={`secondary`}
           >
             <Send strokeWidth={1}/>
           </IconMenuItem>
           <IconMenuItem
             to={`https://www.linkedin.com/in/labbydev/`}
             label={`See LinkedIn profile`}
+            bgColor={`secondary`}
           >
             <Linkedin strokeWidth={1}/>
           </IconMenuItem>
           <IconMenuItem
             to={`https://drupal.org/u/labbydev`}
             label={`See Drupal user profile`}
+            bgColor={`secondary`}
           >
             <Droplet strokeWidth={1}/>
           </IconMenuItem>
           <IconMenuItem
             to={`https://github.com/labbydev`}
             label={`See GitHub profile`}
+            bgColor={`secondary`}
           >
             <GitHub strokeWidth={1}/>
           </IconMenuItem>
           <IconMenuItem
             to={`https://codepen.io/labbydev`}
             label={`See CodePen profile`}
+            bgColor={`secondary`}
           >
             <Codepen strokeWidth={1}/>
           </IconMenuItem>

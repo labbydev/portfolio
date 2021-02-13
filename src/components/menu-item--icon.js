@@ -1,17 +1,26 @@
 import React from "react"
 
-const IconMenuItem = props => (
-  <li
-    className={`inline-block mb-8 sm:mb-0`}
-  >
-    <a
-      href={props.to}
-      className={`icon-link relative mx-4 no-underline block text-lg lg:text-xl text-gray-100 bg-gray-100 bg-opacity-25 rounded-full h-12 w-12 flex items-center justify-center hover:bg-secondary hover:bg-opacity-75 hover:text-white focus:bg-opacity-75 focus:text-tertiary focus:bg-secondary shadow-inner`}
-      aria-label={props.label}
+const bgColors = {
+  gray: `bg-gray-100 bg-opacity-25 hover:bg-opacity-75 focus:bg-opacity-75 hover:bg-secondary focus:bg-secondary`,
+  secondary: `bg-tertiary hover:bg-opacity-75 focus:bg-opacity-75 hover:bg-secondary focus:bg-secondary`
+}
+
+const IconMenuItem = (props) => {
+  return (
+    <li
+      className={`inline-block mb-8 sm:mb-0`}
     >
-      {props.children}
-    </a>
-  </li>
-)
+      <a
+        href={props.to}
+        className={`
+        ${bgColors[props.bgColor] || bgColors.gray}
+          icon-link relative mx-4 no-underline block text-lg lg:text-xl text-gray-100 rounded-full h-12 w-12 flex items-center justify-center hover:text-white focus:text-tertiary shadow-inner`}
+        aria-label={props.label}
+      >
+        {props.children}
+      </a>
+    </li>
+  )
+}
 
 export default IconMenuItem
