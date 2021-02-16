@@ -75,7 +75,6 @@ export default function README({ data }) {
           </IconMenuItem>
         </ul>
       </div>
-      <p>Looking for more details? Read more about what it's like <Link to={`/blog/working-with-me/`}>Working with me</Link>.</p>
     </Layout>
   )
 }

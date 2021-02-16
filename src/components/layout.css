@@ -179,6 +179,10 @@ p {
     opacity: .5;
 }
 
+.icon-link.bg-tertiary:after {
+    box-shadow: 0 0 0 3px #DA0463;
+}
+
 /**
  * Styles for parallax items.
  */
