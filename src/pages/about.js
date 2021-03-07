@@ -2,7 +2,9 @@ import React from "react"
 import PageTitle from "../components/page-title"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import IconMenuItem from "../components/menu-item--icon"
 import { graphql, Link } from "gatsby"
+import { GitHub, Send, Linkedin, Droplet, Codepen } from "react-feather";
 
 export default function About({ data }) {
   return (
@@ -17,11 +19,45 @@ export default function About({ data }) {
         <p><strong>Pronouns:</strong> She/Her</p>
         <p><strong>Location:</strong> Chicago, IL</p>
         <p><strong>Find me on the internet:</strong></p>
-        <ul>
-          <li><Link to={`https://www.linkedin.com/in/labbydev/`}>LinkedIn</Link></li>
-          <li><Link to={`https://github.com/labbydev?tab=repositories`}>GitHub</Link></li>
-          <li><Link to={`https://twitter.com/labbydev`}>Twitter</Link></li>
-          <li><Link to={`https://www.drupal.org/u/labbydev`}>Drupal.org</Link></li>
+        <ul
+          aria-label={`Contact Menu`}
+          className={`text-center mt-8 mb-8`}
+        >
+          <IconMenuItem
+            to={`mailto:labyrwa@gmail.com`}
+            label={`Send Email`}
+            bgColor={`secondary`}
+          >
+            <Send strokeWidth={1}/>
+          </IconMenuItem>
+          <IconMenuItem
+            to={`https://www.linkedin.com/in/labbydev/`}
+            label={`See LinkedIn profile`}
+            bgColor={`secondary`}
+          >
+            <Linkedin strokeWidth={1}/>
+          </IconMenuItem>
+          <IconMenuItem
+            to={`https://drupal.org/u/labbydev`}
+            label={`See Drupal user profile`}
+            bgColor={`secondary`}
+          >
+            <Droplet strokeWidth={1}/>
+          </IconMenuItem>
+          <IconMenuItem
+            to={`https://github.com/labbydev`}
+            label={`See GitHub profile`}
+            bgColor={`secondary`}
+          >
+            <GitHub strokeWidth={1}/>
+          </IconMenuItem>
+          <IconMenuItem
+            to={`https://codepen.io/labbydev`}
+            label={`See CodePen profile`}
+            bgColor={`secondary`}
+          >
+            <Codepen strokeWidth={1}/>
+          </IconMenuItem>
         </ul>
       </div>
       <p>Looking for more details? Read more about what it's like <Link to={`/blog/working-with-me/`}>Working with me</Link>.</p>
