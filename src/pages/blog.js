@@ -24,6 +24,7 @@ const Projects = ({ data }) => {
               >
                 <h2><Link to={node.frontmatter.path}>{node.frontmatter.title}</Link></h2>
                 <small className={`text-gray-500`}>{ node.frontmatter.date }</small>
+                <p>{node.excerpt}</p>
               </div>
             )
           })}
@@ -38,6 +39,7 @@ export const query = graphql`
     allMarkdownRemark(filter: {frontmatter: {type: {eq: "Blog"}}}, sort: {fields: frontmatter___date, order: DESC}) {
       edges {
         node {
+          excerpt
           frontmatter {
             title
             date(formatString: "dddd | MM.DD.YYYY")
