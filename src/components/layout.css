@@ -52,7 +52,7 @@ a:focus:after {
 }
 
 p {
-    @apply my-2;
+    @apply my-5;
 }
 
 @screen lg {
