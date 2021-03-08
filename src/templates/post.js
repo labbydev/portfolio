@@ -9,10 +9,12 @@ export default function Template({ data }) {
     <Layout>
       <div>
         <h1>{frontmatter.title}</h1>
-        <small>Read Time: {timeToRead}</small>
-        <div
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        <div className={`content`}>
+          <small>Read Time: {timeToRead}</small>
+          <div
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        </div>
       </div>
     </Layout>
   )
@@ -22,7 +24,7 @@ export const pageQuery = graphql`
   query($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
-      timeToRead  
+      timeToRead
       frontmatter {
         path
         title
