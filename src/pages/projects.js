@@ -44,7 +44,7 @@ const Projects = ({ data }) => {
 
 export const query = graphql`
   query ProjectsQuery {
-    allMarkdownRemark(filter: {frontmatter: {type: {eq: "Project"}}}, sort: {fields: frontmatter___roles___start, order: ASC}) {
+    allMarkdownRemark(filter: {frontmatter: {type: {eq: "Project"}}}, sort: {fields: frontmatter___roles___start, order: DESC}) {
       edges {
         node {
           excerpt

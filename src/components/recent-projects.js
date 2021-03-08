@@ -7,7 +7,7 @@ const RecentProjects = () => {
   const data = useStaticQuery(
     graphql`
       query {
-      allMarkdownRemark(filter: {frontmatter: {type: {eq: "Project"}}}, limit: 4, sort: {fields: frontmatter___roles___start, order: ASC}) {
+      allMarkdownRemark(filter: {frontmatter: {type: {eq: "Project"}}}, limit: 4, sort: {fields: frontmatter___roles___start, order: DESC}) {
         edges {
           node {
             excerpt
