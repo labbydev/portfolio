@@ -11,7 +11,7 @@ tags:
 
 Hey there! Nice to meet you.
 
-This is my (possibly self-absorbed) attempt to start us on the right foot. Much like myself, this document is always in beta. I proudly found this idea from a [co-worker](https://critter.blog/working-with-me/), who adapted it from [elsewhere on the internet](https://hackernoon.com/12-manager-readmes-from-silicon-valleys-top-tech-companies-26588a660afe). If you have a document like this _please, please, please_ share it with me. If not, you should definitely [consider writing one](/posts/readmes-be-good/).
+This is my (possibly self-absorbed) attempt to start us on the right foot. Much like myself, this document is always in beta. I proudly found this idea from a [co-worker](https://critter.blog/working-with-me/), who adapted it from [elsewhere on the internet](https://hackernoon.com/12-manager-readmes-from-silicon-valleys-top-tech-companies-26588a660afe). If you have a document like this _please, please, please_ share it with me. If not, you should definitely [consider writing one](/blog/why-you-need-a-readme).
 
 ## Communication
 If you need to reach out to me, please ping me on chat. Please, use the most appropriate public channel based on the topic of discussion. I am not a fan of [private conversations](http://blog.flowdock.com/2014/04/30/beware-of-private-conversations/) if it doesn't _need_ to be private.

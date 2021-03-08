@@ -1,7 +1,7 @@
 ---
 title: Write a personal README
 date: 2020-08-29
-path: /blog/readmes-be-good/
+path: /blog/why-you-need-a-readme/
 type: Blog
 tags:
   - communication
