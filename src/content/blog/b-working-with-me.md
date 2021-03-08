@@ -2,6 +2,7 @@
 title: Working with Me
 date: 2020-07-29
 path: /blog/working-with-me/
+type: Blog
 tags:
   - communication
   - personal
@@ -27,4 +28,4 @@ Please let me know your typical working hours. If I ever reach out to you outsid
 ## Feedback
 I am constantly looking for feedback, so please trust me when I say you won't offend me. Whatever your feedback may be please just keep it honest and timely. While I appreciate constructive criticism I also like to process my reaction, note my areas of improvement and catalog my progress, therefore I prefer to receive feedback in a written manner.
 
-Likewise, you can expect me to give candid and timely feedback to you. Please, let me know how you prefer to receive feedback. 
+Likewise, you can expect me to give candid and timely feedback to you. Please, let me know how you prefer to receive feedback.
