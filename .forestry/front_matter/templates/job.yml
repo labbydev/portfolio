@@ -1,0 +1,32 @@
+---
+label: Job
+hide_body: false
+fields:
+- type: text
+  name: company
+  label: company
+- type: field_group_list
+  name: roles
+  label: roles
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: datetime
+    name: start
+    label: start
+  - type: datetime
+    name: end
+    label: end
+- type: text
+  name: location
+  label: location
+- type: text
+  name: url
+  label: url
+- type: number
+  name: start
+  label: start
+- type: text
+  name: type
+  label: type
