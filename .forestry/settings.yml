@@ -6,6 +6,11 @@ webhook_url:
 sections:
 - type: directory
   path: src/content
+  label: Projects
+  create: documents
+  match: p-**.md
+- type: directory
+  path: src/content
   label: Jobs
   create: documents
   match: j-**.md
