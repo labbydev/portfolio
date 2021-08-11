@@ -1,6 +1,6 @@
 ---
 client: Urban Institute
-image: "/src/images/www-urban-org_.png"
+image: "/static/:filename:/www-urban-org_.png"
 roles:
 - title: Software Architect
   start: 2021-03-01T15:01:00Z
