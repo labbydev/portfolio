@@ -1,0 +1,42 @@
+---
+label: Project
+hide_body: false
+fields:
+- type: text
+  name: client
+  label: client
+- type: file
+  name: image
+  label: image
+- type: field_group_list
+  name: roles
+  label: roles
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: datetime
+    name: start
+    label: start
+  - type: datetime
+    name: end
+    label: end
+- type: field_group_list
+  name: sites
+  label: sites
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: link
+    label: link
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: path
+  label: path
+- type: text
+  name: type
+  label: type
