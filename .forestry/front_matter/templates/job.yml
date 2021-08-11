@@ -30,3 +30,5 @@ fields:
 - type: text
   name: type
   label: type
+pages:
+- src/content/j-contentful.md
