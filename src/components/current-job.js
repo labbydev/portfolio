@@ -15,7 +15,7 @@ const CurrentJob = () => {
                             url
                             location
                             roles {
-                                start(difference: "years")
+                                start(formatString: "MMMM YYYY")
                                 title
                             }
                         }
@@ -62,7 +62,7 @@ const CurrentJob = () => {
                         className={`block text-secondary-darker`}
                         href={node.frontmatter.url}
                       >{node.frontmatter.company}</a>
-                      <small>{(key.start === "1") ? (`a year`) : (key.start + ` years`)}</small>
+                      <small>{(`since ` + key.start)}</small>
                     </div>
                   )
                 } else {
