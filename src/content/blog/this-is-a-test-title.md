@@ -2,7 +2,7 @@
 title: This is a test title
 date: 
 path: ''
-type: Blog
+type: ''
 tags: []
 
 ---
