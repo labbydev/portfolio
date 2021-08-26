@@ -1,11 +1,34 @@
 ---
-title: Create a better environment
+title: Change the Climate
 date: 2021-08-13T14:00:00Z
 path: "/blog/content-for-the-future"
-type: ''
-tags: []
+type: Blog
+tags:
+- culture
+- environment
+- psychological safety
 
 ---
-We cannot control the environment.
+I recently had the opportunity to listen to [Allison Levine](https://alisonlevine.com/about-alison/) speak about her harrowing experiences climbing Mount Everest. During the incredible tale of how she led the first group of American women to climb Mount Everest she spoke candidly about what it was like to get so close and yet not be able to reach the summit due to poor conditions that came in fast.
 
-\* This is true. But we also contribute to it. Like we can't control that there is a tornado happening, but humans have contributed to climate change that cause tornados. And similarly we can't control the environment in which we work, but the company culture contributes, the team dynamics contribute. How are you contributing?
+## You can't control the Environment
+
+A key lesson was that, we cannot control the environment and what matters is getting your team to safety first. I want to make it clear, that I completely agree. When you are at the summit of Mount Everest you must be aware of the limitations. Regardless of location, you must keep a keen eye on the environment and be sure to adjust for safety accordingly.
+
+However, there are many times where our teams are _not_ at the summit of Mount Everest and we shift based on the environment. While, we should accept that we cannot completely control the environment in which we work, we do contribute to it.
+
+## But, you can change it
+
+According to [_Sapies: A  Brief History of Humankind_](https://www.goodreads.com/book/show/20873740-sapiens), humans have been have changing their environments for tens of thousands of years. Since we expanded out of Afro-Asian and started taking over new landscapes we've disrupted ecosystems and caused the extinction of species. Even today, a the [Union of Concerned Scientists](https://www.ucsusa.org/resources/are-humans-major-cause-global-warming) asserts that "97 % of scientists agree humans cause climate change." So, we should all be empowered to enact our own climate change amongst our workplaces. It's basically human nature.
+
+## How?
+
+Let's not pretend that this is easy. It's not. If you are surviving an a toxic environment then you know that "when fear rears it's ugly head, people focus on protecting themselves, not on helping their organizations improve" stresses [_The No Asshole Rule: Building a Civilized Workplace and Surviving One That Isn't_](https://www.goodreads.com/book/show/6494346-the-no-asshole-rule)_._
+
+The best place to start is by looking at the way that you yourself contribute the culture and environment you're working in. How can you create more psychological safety on your teams? Where can you create space for individuals to fail without retribution to their reputation? How can you show up with authenticity and give others the space to do the same?
+
+> “While successful culture can look and feel like magic, the truth is that it’s not. Culture is a set of living relationships working toward a shared goal. It’s not something you are. It’s something you do.”
+>
+> \-- Daniel Coyle, [_The Culture Code: The Secrets of Highly Successful Groups_](https://www.goodreads.com/book/show/33517721-the-culture-code)
+
+**What will you do today to create a better environment?**
