@@ -1,7 +1,7 @@
 ---
 title: Change the Climate
 date: 2021-08-13T14:00:00Z
-path: "/blog/content-for-the-future"
+path: "/blog/change-the-climate"
 type: Blog
 tags:
 - culture
