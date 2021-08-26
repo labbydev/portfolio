@@ -1,13 +1,11 @@
 ---
-title: This is a test title
-date: 
-path: ''
+title: Create a better environment
+date: 2021-08-13T14:00:00Z
+path: "/blog/content-for-the-future"
 type: ''
 tags: []
 
 ---
-Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum.
+We cannot control the environment.
 
-Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum.
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.
+\* This is true. But we also contribute to it. Like we can't control that there is a tornado happening, but humans have contributed to climate change that cause tornados. And similarly we can't control the environment in which we work, but the company culture contributes, the team dynamics contribute. How are you contributing?
