@@ -28,6 +28,20 @@ h4 {
     @apply mb-1 mt-2 font-semibold;
 }
 
+blockquote {
+    @apply text-lg text-secondary-dark tracking-wide italic font-serif font-semibold leading-relaxed py-1 px-8 my-5 -mx-3 relative;
+}
+
+blockquote:before {
+    @apply absolute top-auto -left-2 text-primary text-9xl -mx-5 -my-2;
+    opacity: .5;
+    content: '“';
+}
+
+strong {
+    @apply font-semibold;
+}
+
 a {
     @apply text-secondary font-semibold relative z-10 inline-block;
 }
@@ -236,7 +250,7 @@ p {
 }
 
 .content {
-    @apply mx-auto mb-10;
+    @apply mx-auto mb-20;
     max-width: 92%;
     width: 750px;
 }
