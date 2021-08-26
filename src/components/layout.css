@@ -29,17 +29,23 @@ h4 {
 }
 
 blockquote {
-    @apply text-lg text-secondary-dark tracking-wide italic font-serif font-semibold leading-relaxed py-1 px-8 my-5 -mx-3 relative;
+    @apply bg-gray-100 bg-opacity-50 shadow-inner text-lg text-justify text-secondary-dark tracking-wide italic font-serif font-semibold leading-relaxed py-1 px-8 my-5 -mx-3 relative;
 }
 
 blockquote:before {
     @apply absolute top-auto -left-2 text-primary text-9xl -mx-5 -my-2;
-    opacity: .5;
+    opacity: .75;
     content: '“';
 }
 
+blockquote:after {
+    @apply absolute bottom-0 -right-2 text-primary text-9xl;
+    opacity: .75;
+    content: '”';
+}
+
 strong {
-    @apply font-semibold;
+    @apply font-semibold text-tertiary;
 }
 
 a {
