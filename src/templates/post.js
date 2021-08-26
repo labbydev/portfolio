@@ -10,7 +10,10 @@ export default function Template({ data }) {
       <div>
         <h1>{frontmatter.title}</h1>
         <div className={`content`}>
-          <small>Read Time: {timeToRead}</small>
+          <div className={`flex justify-around my-10`}>
+            <small className={`text-gray-500`}>{ frontmatter.date }</small>
+            <small className={`text-gray-500`}>{timeToRead} min read</small>
+          </div>
           <div
             dangerouslySetInnerHTML={{ __html: html }}
           />
@@ -28,6 +31,7 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
+        date(formatString: "dddd | MMMM DD, YYYY")
       }
     }
   }

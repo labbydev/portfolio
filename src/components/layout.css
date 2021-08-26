@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-    @apply text-4xl text-secondary-dark text-center tracking-wide my-3 font-serif font-black my-10;
+    @apply text-4xl text-secondary-dark text-center tracking-wide my-3 font-serif font-black my-20;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, .5);
 }
 
@@ -29,7 +29,7 @@ h4 {
 }
 
 blockquote {
-    @apply bg-gray-100 bg-opacity-50 shadow-inner text-lg text-justify text-secondary-dark tracking-wide italic font-serif font-semibold leading-relaxed py-1 px-8 my-5 -mx-3 relative;
+    @apply bg-gray-100 bg-opacity-50 shadow-inner text-lg text-justify text-secondary-dark tracking-wide italic font-serif font-semibold leading-relaxed py-1 px-8 my-10 -mx-3 relative;
 }
 
 blockquote:before {
