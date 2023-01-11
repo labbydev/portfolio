@@ -16,7 +16,7 @@
     "gatsby-react-router-scroll": "^4.11.0",
     "gatsby-remark-images": "^3.11.1",
     "gatsby-source-filesystem": "^2.11.1",
-    "gatsby-transformer-remark": "^4.8.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.12.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
